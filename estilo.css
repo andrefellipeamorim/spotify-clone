@@ -1,5 +1,6 @@
 html, body, .capa{
 	height: 100%;
+	overflow: auto;
 }
 
 body{
@@ -47,6 +48,13 @@ nav.navbar-transparente{
 	color: #9bf0e1;
 	background: none;
 }
+footer .nav a:active{
+	background: none;
+}
+footer .nav a:visited{
+	background: none;
+}
+
 
 /* Capa */ 
 
@@ -67,10 +75,10 @@ nav.navbar-transparente{
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
-	padding: 10px 35px;
-	margin: 0px 15px;
 	text-transform: uppercase;
 	transition: background 0.4s, color 0.4s;
+	padding: 10px 35px;
+	margin: 0px 15px;
 }
 .btn-roxo{
 	background: #7c25f8
@@ -119,7 +127,10 @@ nav.navbar-transparente{
 footer{
 	background: #000;
 	padding: 50px 0px 20px 0px;
-	position: relative;
+	position: relative;	
+}
+footer .img-logo{
+	margin-bottom: 40px;
 }
 
 .itemrs{
@@ -129,7 +140,6 @@ footer{
 /*tipografia*/
 
 h1{
-	font-size: 110px;
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
@@ -166,5 +176,50 @@ p{
 	text-transform: uppercase;
 }
 
+/* Media queries */
+
+@media only screen and (max-width : 640px){
+	h1{
+		font-size: 50px;
+	}
+	.btn-custom{
+		padding: 10px 35px;
+		margin: 10px 15px;
+	}
+	#rodape{
+		text-align: center;
+	}
+	#rodape .img-logo{
+		margin: 0 auto;
+		margin-bottom: 20px;						
+	}
+	#rodape .itemrs{
+		float: none;
+	}			
+}
+
+@media only screen and (min-width : 641px) and (max-width : 769px){
+	h1{
+		font-size: 70px;
+	}
+}
+
+@media only screen and (min-width : 770px) and (max-width : 1007px){
+	h1{
+		font-size: 90px;
+	}	
+}
+
+@media only screen and (min-width : 1008px) and (max-width : 1379px){
+	h1{
+		font-size: 100px;
+	}	
+}
+
+@media only screen and (min-width : 1380px){
+	h1{
+		font-size: 120px;
+	}
+}
 
 
