@@ -1,0 +1,370 @@
+body{
+  background: #533b78;
+  font-family: Arial, sans-serif;
+}
+html,body,.sections{
+  height: 100%;     
+}
+
+h2{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+} 
+
+/*================================Alinhamento das Sections e Conteudos==================================*/
+
+.sections{
+  display: table;
+  width: 100%;
+  padding-top: 80px; 
+  padding-bottom: 50px;
+  transition: h 1s;  
+}
+
+.salign{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/*===========================================IDs Sections===============================================*/
+
+#sobre{
+	background: linear-gradient(to right, #3b2a55, #533b78, #3b2a55); 
+	color: white; 
+}
+
+#formacao{
+	background: linear-gradient(to right, #ffff80, #ffffb3, #ffff80); 
+	color: #000000;
+}
+
+#skills{
+	background: linear-gradient(to right, #1fc7a5, #6EE8D0, #1fc7a5); 
+	color: black;
+}
+
+#jobs{
+	background: linear-gradient(to right, #e07638, #E89A6E, #e07638); 
+	color: #000000;  
+}
+
+#contato{
+	background: linear-gradient(to right, #33adff, #80ccff, #33adff); 
+	color: #000000;
+}
+
+#footer{
+	background: white; 
+	color: black;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+/*=================================================Classes==============================================*/
+
+.avatar{
+  margin-top: 50px;
+  max-height: 480px;
+}
+
+.card{
+  margin: 0 auto;
+  float: none; 
+  margin-bottom: 20px; 
+  width: 15rem;  
+}
+
+.jobscard{
+  width: 200px;
+  margin-top: 10px;    
+}
+
+.shadowtext{
+  text-shadow: 2px 2px 1px black;  
+}
+
+.logocolor{
+	color: white;
+  opacity: 0.5;
+}
+
+.ficons{
+  opacity: 0.9;
+}
+
+.clinks{
+  width: 80px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+
+/*============================================Customizar navbar===========================================*/
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom {
+  background-color: rgba(0,0,0,0.6);   
+}
+
+.navbar-custom .navbar-brand {
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: white;
+  text-shadow: 0px 0px 10px white;
+}
+
+
+/*================================================Animações==============================================*/
+
+@-webkit-keyframes movimento-lr {
+   from {
+      left: -500px;
+      opacity: 0;
+   }
+   
+   to {
+      left: 0px;
+      opacity: 1;
+   }
+}
+
+.animlr {
+   -webkit-animation-name: movimento-lr;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: 1;
+   position: relative; 
+}
+
+@-webkit-keyframes movimento-rl {
+   from {
+      right: -500px;
+      opacity: 0;
+   }
+   
+   to {
+      right: 0px;
+      opacity: 1;
+   }
+}
+
+.animrl {
+   -webkit-animation-name: movimento-rl;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: 1;
+   position: relative; 
+}
+
+@-webkit-keyframes opacidade {
+   from {
+      opacity: 0;
+   }
+   
+   to {
+      opacity: 1;
+   }
+}
+
+.opacidade {
+   -webkit-animation-name: opacidade;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: 1;
+   position: relative; 
+}
+
+/*==========================================Fontes e imagens==============================================*/
+
+/*Telas grandes*/
+@media only screen and (min-width : 1380px){ 
+  h1{
+    font-size: 3.1em;   
+  }
+  h2{
+    font-size: 2.1em;    
+  }
+  h3{
+    font-size: 1.7em;
+  }
+  h4{
+    font-size: 1.6em;
+  }
+  p{
+    font-size: 1.3em;    
+  }
+
+  .ficons{
+    max-height: 160px;
+    margin-bottom: 50px;
+  }
+
+  .sicons{
+	  margin-top: 20px;
+	  margin-bottom: 30px;
+	  margin-left: 40px;
+	  margin-right: 40px;
+	  width: 130px;
+	}  
+}
+
+/*telas mais comuns*/
+@media only screen and (min-width : 1008px) and (max-width : 1379px){
+  h1{
+    font-size: 2.9em;   
+  }
+  h2{
+    font-size: 1.9em;
+  }
+  h3{
+    font-size: 1.5em;
+  }
+  h4{
+    font-size: 1.4em;
+  }
+  p{
+    font-size: 1.1em;    
+  }
+
+  .ficons{
+    max-height: 100px;
+    margin-bottom: 30px;
+  }
+
+  .sicons{
+  	margin-top: 10px;
+  	margin-bottom: 30px;
+  	margin-left: 20px;
+  	margin-right: 20px;
+  	width: 100px;
+	}
+}
+
+/*tablet size*/
+@media only screen and (min-width : 770px) and (max-width : 1007px){
+  h1{
+    font-size: 2.5em;   
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  h4{
+    font-size: 1.1em;
+  }
+  p{
+    font-size: 1em;    
+  }
+
+  
+  .ficons{
+    max-height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .sicons{
+  	margin-top: 15px;
+  	margin-bottom: 30px;
+  	margin-left: 20px;
+  	margin-right: 25px;
+  	width: 80px;
+	}
+}
+
+/*small tablet size*/
+@media only screen and (min-width : 641px) and (max-width : 769px){
+  h1{
+    font-size: 2.4em;   
+  }
+  h2{
+    font-size: 1.4em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  h4{
+    font-size: 1.1em;
+  }
+  p{
+    font-size: 1em;    
+  }
+
+  .ficons{
+    max-height: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .sicons{
+    margin-top: 15px;
+  	margin-bottom: 15px;
+  	margin-left: 15px;
+  	margin-right: 20px;
+  	width: 80px;
+	}
+}
+
+/*smart size*/
+@media only screen and (max-width : 640px){
+  h1{
+    font-size: 2.15em;   
+  }
+  h2{
+    font-size: 1.25em;
+  }
+  h3{
+    font-size: 1.1em;
+  }
+  h4{
+    font-size: 1.05em;
+  }
+  p{
+    font-size: 0.95em;    
+  }
+ 
+
+  .navbar-toggler-icon{
+  	width: 20px;
+  }
+
+  .navbar-custom .navbar-brand {
+  	color: white;
+  	font-size: 20px;
+	}
+
+  .ficons{
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .sicons{
+  	margin-top: 15px;
+  	margin-bottom: 15px;
+  	margin-left: 15px;
+  	margin-right: 20px;
+  	width: 80px;
+	}
+
+  .shadowtext{
+    text-shadow: 1px 1px 1px black;  
+  }
+}

@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
     <title>Música para todos - Spotify</title>
     <link rel="icon" href="imagens/favicon.png">
 
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,30 +25,20 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+    <nav class="navbar fixed-top navbar-transparente">
       <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">
-            <span class="img-logo">Spotify</span>
-          </a>  
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-nav">
-            <span class="sr-only">alterar navegação</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>        
-        </div>
-
+        <a href="index.html" class="navbar-brand"><span class="img-logo">Spotify</span></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-nav">
+        <span class="navbar-toggler-icon"></span>
 
         <div class="collapse navbar-collapse" id="barra-nav">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Premium</a></li>
-            <li><a href="">Ajuda</a></li>
-            <li><a href="">Baixar</a></li>
-            <li class="divisor visible-md-block visible-lg-block visible-sm-block" role="separator"></li>
-            <li><a href="">Inscrever-se</a></li>
-            <li><a href="">Entrar</a></li>            
+          <ul class="navbar-nav">
+            <li><a href="" class="nav-link">Premium</a></li>
+            <li><a href="" class="nav-link">Ajuda</a></li>
+            <li><a href="" class="nav-link">Baixar</a></li>
+            <li class="divisor d-md-block d-lg-block d-sm-block" role="separator"></li>
+            <li><a href="" class="nav-link">Inscrever-se</a></li>
+            <li><a href="" class="nav-link">Entrar</a></li>            
           </ul>          
         </div>
       </div>
@@ -181,10 +175,15 @@
 
     
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+      
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>   
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
