@@ -51,7 +51,7 @@ body{
 	margin: 10px 10px;
 }
 
-.nav-link{
+.navbar-nav .nav-link{
 	margin-left: 15px;
 }
 
@@ -60,13 +60,6 @@ body{
 }
 .navbar-nav>li>a:hover, footer .nav a:hover{
 	color: #9bf0e1;	
-}
-footer .nav a:active{
-	
-
-}
-footer .nav a:visited{
-	
 }
 
 
