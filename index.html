@@ -25,18 +25,19 @@
   </head>
   <body>
 
-    <nav class="navbar fixed-top navbar-transparente">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-transparente">
       <div class="container">
         <a href="index.html" class="navbar-brand"><span class="img-logo">Spotify</span></a> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-nav">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-nav">        
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse" id="barra-nav">
+        <div class="collapse justify-content-end navbar-collapse" id="barra-nav">
           <ul class="navbar-nav">
             <li><a href="" class="nav-link">Premium</a></li>
             <li><a href="" class="nav-link">Ajuda</a></li>
             <li><a href="" class="nav-link">Baixar</a></li>
-            <li class="divisor d-md-block d-lg-block d-sm-block" role="separator"></li>
+            <li class="divisor d-none d-lg-block" role="separator"></li>
             <li><a href="" class="nav-link">Inscrever-se</a></li>
             <li><a href="" class="nav-link">Entrar</a></li>            
           </ul>          
@@ -45,11 +46,18 @@
     </nav>
 
     <div class="capa">
-      <div class="texto-capa">
-        <h1>Música para todos</h1>
-        <a href="" class="btn btn-custom btn-roxo btn-lg">Aproveite o Spotify Free</a>
-        <a href="" class="btn btn-custom btn-branco btn-lg">Obter Spotify Premium</a>       
-      </div>      
+      <div class="texto-capa"> 
+        <div class="d-none d-sm-block">      
+          <h1>Música para todos</h1>
+          <a href="" class="btn btn-custom btn-roxo btn-lg">Aproveite o Spotify Free</a>
+          <a href="" class="btn btn-custom btn-branco btn-lg">Obter Spotify Premium</a>             
+        </div>
+        <div class= "d-block d-sm-none">        
+          <h1>Música para<br>todos</h1>
+          <a href="" class="btn btn-custom btn-roxo btn-sm">Aproveite o Spotify Free</a>
+          <a href="" class="btn btn-custom btn-branco btn-sm">Obter Spotify Premium</a> 
+        </div>            
+      </div>       
     </div>
 
     <section id="servicos">
@@ -60,18 +68,18 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6">
-                <img src="imagens/img1.jpg" class="img-responsive albuns">                
+                <img src="imagens/img1.jpg" class="img-fluid albuns">                
               </div> 
               <div class="col-md-6">
-                <img src="imagens/img2.jpg" class="img-responsive albuns">                
+                <img src="imagens/img2.jpg" class="img-fluid albuns">                
               </div>             
             </div>
             <div class="row">
               <div class="col-md-6">
-                <img src="imagens/img3.jpg" class="img-responsive albuns">                
+                <img src="imagens/img3.jpg" class="img-fluid albuns">                
               </div> 
               <div class="col-md-6">
-                <img src="imagens/img4.jpg" class="img-responsive albuns">                
+                <img src="imagens/img4.jpg" class="img-fluid albuns">                
               </div>             
             </div>             
           </div> 
@@ -114,10 +122,10 @@
           <div class="col-md-8">
             <div class="row rotacionar">
               <div class="col-md-6">
-                <img src="imagens/iphone1.png" class="img-responsive visible-md-block visible-lg-block">                
+                <img src="imagens/iphone1.png" class="img-fluid d-none d-lg-block d-md-block">                
               </div>
               <div class="col-md-6">
-                <img src="imagens/iphone2.png" class="img-responsive visible-md-block visible-lg-block">                
+                <img src="imagens/iphone2.png" class="img-fluid d-none d-lg-block d-md-block">                
               </div>
             </div>            
           </div>         
@@ -130,43 +138,51 @@
     <footer id="rodape">
       <div class="container">
         <div class="row">          
-          <div class="col-md-2">
+          <div class="col-md-3">
             <span class="img-logo">Spotify</span>
           </div>
 
           <div class="col-md-2">
             <h4>company</h4>
-            <ul class="nav">
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Empregos</a></li>
-              <li><a href="#">Imprensa</a></li>
-              <li><a href="#">Novidades</a></li>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Empregos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Imprensa</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Novidades</a></li>
             </ul>
           </div>
 
           <div class="col-md-2">
             <h4>comunidades</h4>
-            <ul class="nav">
-              <li><a href="#">Artistas</a></li>
-              <li><a href="#">Desenvolvedores</a></li>
-              <li><a href="#">Marcas</a></li>              
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Artistas</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Desenvolvedores</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Marcas</a></li>              
             </ul>
           </div>
 
           <div class="col-md-2">
-            <h4>links uteis</h4>
-            <ul class="nav">
-              <li><a href="#">Ajuda</a></li>
-              <li><a href="#">Presentes</a></li>
-              <li><a href="#">Player da web</a></li>
+            <h4>links úteis</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Presentes</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Player da web</a></li>
             </ul>
           </div>
 
-          <div class="col-md-4">
-            <ul class="nav">
-              <li class="itemrs"><a href="#"><img src="imagens/facebook.png"></a></li>
-              <li class="itemrs"><a href="#"><img src="imagens/twitter.png"></a></li>
-              <li class="itemrs"><a href="#"><img src="imagens/instagram.png"></a></li>
+          <div class="col-md-12 d-lg-block d-md-block d-none">
+            <ul class="nav justify-content-end">
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/facebook.png"></a></li>
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/twitter.png"></a></li>
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/instagram.png"></a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 d-lg-none d-md-none">
+            <ul class="nav justify-content-center">
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/facebook.png"></a></li>
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/twitter.png"></a></li>
+              <li class="itemrs nav-item"><a href="#"><img src="imagens/instagram.png"></a></li>
             </ul>
           </div>
         </div>
@@ -178,12 +194,12 @@
     <!-- Optional JavaScript -->
       
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/mdb.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>   
+    <script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>   
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
